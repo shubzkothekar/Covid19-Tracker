@@ -1,3 +1,12 @@
-export { default as Cards } from './Cards/Cards.jsx'
-export { default as Charts } from './Charts/Charts.jsx'
-export { default as CountryPicker } from './CountryPicker/CountryPicker.jsx'
+
+
+import Cards from './Cards/Cards.jsx'
+import Charts from './Charts/Charts.jsx'
+import CountryPicker from './CountryPicker/CountryPicker.jsx'
+
+
+export {
+    Cards,
+    Charts,
+    CountryPicker
+}
