@@ -2,15 +2,5 @@ body {
     background-color:  rgb(250,250,250);
 }
 
-.cards {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
 
-.charts {
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    
-}
+
