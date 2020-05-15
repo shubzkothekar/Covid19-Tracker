@@ -1,7 +1,7 @@
 import React from 'react'
-import Cards from './components/Cards/Cards'
-import Charts from './components/Charts/Charts'
-import CountryPicker from './components/CountryPicker/CountryPicker'
+import Cards from './Components/Cards/Cards'
+import Charts from './Components/Charts/Charts'
+import CountryPicker from './Components/CountryPicker/CountryPicker'
 
 import { fetchData } from './api'
 import image from './image/image.png'
