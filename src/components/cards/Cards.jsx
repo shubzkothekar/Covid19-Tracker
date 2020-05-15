@@ -3,6 +3,7 @@ import { Card, CardContent, Typography, Grid } from '@material-ui/core'
 import styles from './Cards.module.css'
 import CountUp from 'react-countup'
 import cx from 'classnames'
+
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     if (!confirmed) {
         return "Loading... "
@@ -15,7 +16,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                         <Typography color="textSecondary" gutterBottom>Infected</Typography>
                         <Typography variant="h5"><CountUp start={0} end={confirmed.value} duration={2.5} separator="," /></Typography>
                         <Typography color="textSecondary" gutterBottom>{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2" gutterBottom>Number of active patients</Typography>
+                        <Typography variant="body2" gutterBottom>Number of infected patients</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
@@ -23,7 +24,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                         <Typography color="textSecondary" gutterBottom>Recovered</Typography>
                         <Typography variant="h5" ><CountUp start={0} end={recovered.value} duration={2.5} separator="," /></Typography>
                         <Typography color="textSecondary" gutterBottom>{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2" gutterBottom>Number of pattients recovered</Typography>
+                        <Typography variant="body2" gutterBottom>Number of patients recovered</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>

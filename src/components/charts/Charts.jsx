@@ -10,7 +10,7 @@ const Charts = ({ data: { confirmed, recovered, deaths }, country }) => {
         const fetchAPI = async () => {
             setDailyData(await fetchDailyData())
         }
-        console.log(dailyData)
+
         fetchAPI()
     }, [])
 
@@ -41,7 +41,8 @@ const Charts = ({ data: { confirmed, recovered, deaths }, country }) => {
 
     )
 
-    console.log(confirmed, recovered, deaths)
+
+
     const barChart = (
 
         confirmed ? (
